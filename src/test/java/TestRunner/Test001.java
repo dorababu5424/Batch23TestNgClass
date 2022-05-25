@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -18,7 +19,8 @@ import BaseRunner.BaseClass;
 //prequest--
 
 
-//Browser---chrome
+//Browser---chrom firfox edge opera etc
+
 //Application -url
 //Navigate to home page
 
@@ -28,6 +30,8 @@ import BaseRunner.BaseClass;
 //2)Dell laptop adding to cart
 //3)Lenovo laptop
 //4) Asus laptop
+
+
 
 
 
@@ -48,6 +52,9 @@ public class Test001 extends BaseClass {
 	@AfterMethod
 	private void TestCaseEndedTime() {
 		// TODO Auto-generated method stub
+		
+		
+		//Validate current url using assert
 		
 		System.out.println("ASSERATION FOR TO FIND EXPECTED RESULT");
 
@@ -90,6 +97,15 @@ public class Test001 extends BaseClass {
 			}
 			
 		}
+		//scrool down
+		
+		//click on add cart button
+		
+		//Successfull message
+		
+		String addcart = driver.findElement(By.xpath("//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']")).getText();
+		
+		Assert.assertEquals("Added to Cart", addcart);
 		
 		
 
