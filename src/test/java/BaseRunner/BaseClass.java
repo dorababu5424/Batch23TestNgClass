@@ -12,6 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,7 +23,7 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	
-	public  String browserName = "chrome";
+	
 	
 	
 	@BeforeSuite
@@ -52,11 +53,14 @@ public class BaseClass {
 	@AfterTest
 	private void TestEnded() {
 		// TODO Auto-generated method stub
-
+		driver.quit();
 	}
 	
+	
+	
+	@Parameters({"browserType"})
 	@BeforeClass
-	public void LunchBrowser()
+	public void LunchBrowser(String browserName)
 	{
 		
 	System.out.println("CHROME BROWSER LUNCHED");
@@ -66,7 +70,10 @@ public class BaseClass {
 	if (browserName.equals("chrome")) {
 	
 		
-		WebDriverManager.chromedriver().setup();
+	//	WebDriverManager.chromedriver().setup();
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
+		
 		
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
@@ -74,16 +81,16 @@ public class BaseClass {
 		
 	}else if (browserName.equals("fireFox")) {
 		
-	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
 		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 	}else if (browserName.equals("Internetexploer")) {
-		//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
 		
-		WebDriverManager.iedriver().setup();
+		//WebDriverManager.iedriver().setup();
 		driver = new InternetExplorerDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -107,7 +114,7 @@ public class BaseClass {
 	
 	private void BrowserTeardown() {
 		// TODO Auto-generated method stub
-		driver.quit();
+	
 		System.out.println("CHROME BROWSER QUIT");
 	}
 	
