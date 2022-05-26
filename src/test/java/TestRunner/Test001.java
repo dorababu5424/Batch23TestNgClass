@@ -103,9 +103,9 @@ public class Test001 extends BaseClass {
 		
 		//Successfull message
 		
-		String addcart = driver.findElement(By.xpath("//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']")).getText();
+//		String addcart = driver.findElement(By.xpath("//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']")).getText();
 		
-		Assert.assertEquals("Added to Cart", addcart);
+//		Assert.assertEquals("Added to Cart", addcart);
 		
 		
 

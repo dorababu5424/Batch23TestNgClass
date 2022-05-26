@@ -40,6 +40,7 @@ public class BaseClass {
 		System.out.println("AMAZON APPLICATION TESTCASE SUITE ENDED ");
 		Date date = new Date();
 		System.out.println( date.getTime());
+		driver.quit();
 	}
 	
 	
@@ -53,7 +54,7 @@ public class BaseClass {
 	@AfterTest
 	private void TestEnded() {
 		// TODO Auto-generated method stub
-		driver.quit();
+		
 	}
 	
 	

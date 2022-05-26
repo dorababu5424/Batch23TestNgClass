@@ -1,41 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]">
-  <parameter name="browserType" value="firefox"/>
-  <test parallel="none" name="Test1(failed)">
+  <parameter name="browserType" value="chrome"/>
+  <test parallel="none" name="Test(failed)">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="TestRunner.Test001">
+      <class name="TestRunner.DataProviders">
         <methods>
           <include name="LunchBrowser"/>
-          <include name="LunchBrowser"/>
           <include name="SuiteStarted"/>
-          <include name="Tc1"/>
-          <include name="TestCaseStartedTime"/>
-          <include name="TestCaseStartedTime"/>
           <include name="SuitedFinished"/>
-          <include name="TestCaseEndedTime"/>
-          <include name="TestCaseEndedTime"/>
+          <include name="Tc1" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- TestRunner.Test001 -->
+      </class> <!-- TestRunner.DataProviders -->
     </classes>
-  </test> <!-- Test1(failed) -->
-  <test parallel="none" name="Test2(failed)">
-    <parameter name="browserType" value="firefox"/>
-    <classes>
-      <class name="TestRunner.Test001">
-        <methods>
-          <include name="LunchBrowser"/>
-          <include name="LunchBrowser"/>
-          <include name="SuiteStarted"/>
-          <include name="Tc1"/>
-          <include name="TestCaseStartedTime"/>
-          <include name="TestCaseStartedTime"/>
-          <include name="SuitedFinished"/>
-          <include name="TestCaseEndedTime"/>
-          <include name="TestCaseEndedTime"/>
-        </methods>
-      </class> <!-- TestRunner.Test001 -->
-    </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
