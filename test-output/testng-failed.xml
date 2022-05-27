@@ -5,14 +5,14 @@
   <test parallel="none" name="Test(failed)">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="TestRunner.DataProviders">
+      <class name="TestRunner.Test003">
         <methods>
           <include name="LunchBrowser"/>
           <include name="SuiteStarted"/>
           <include name="SuitedFinished"/>
-          <include name="Tc1" invocation-numbers="0 1 2 3"/>
+          <include name="TC1"/>
         </methods>
-      </class> <!-- TestRunner.DataProviders -->
+      </class> <!-- TestRunner.Test003 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

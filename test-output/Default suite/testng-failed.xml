@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="TestRunner.DataProviders">
+      <class name="TestRunner.Test003">
         <methods>
           <include name="SuiteStarted"/>
-          <include name="Tc1"/>
+          <include name="TC1"/>
         </methods>
-      </class> <!-- TestRunner.DataProviders -->
+      </class> <!-- TestRunner.Test003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

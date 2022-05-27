@@ -88,7 +88,7 @@ public class Test002 extends BaseClass {
 		// TODO Auto-generated method stub
 
 		
-		System.out.println("TAKE ORDER AND TAKE SCREENSHOT");
+		System.out.println("TAKE ORDER id AND TAKE SCREENSHOT");
 	}
 
 	

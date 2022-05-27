@@ -62,7 +62,7 @@ public class DataProviders extends BaseClass {
 	@DataProvider(name ="SampleData")
 	public Object[][] data(){
 		
-		return new Object[][] {
+		return new Object[][]{
 			
 			{"Dorababu5424","SilenceHeart"},{"Dorababu5424","Silenceheart"},{"Dorababu542","SilenceHeart"},{"rAJES","DASLKDAS"}
 		};
