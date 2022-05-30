@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import Utilites.FilePath;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -73,7 +74,7 @@ public class BaseClass {
 		
 	//	WebDriverManager.chromedriver().setup();
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", FilePath);
 		
 		
 		driver = new ChromeDriver();
@@ -82,7 +83,7 @@ public class BaseClass {
 		
 	}else if (browserName.equals("fireFox")) {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Drivers101\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",FilePath.ChromePath);
 		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();

@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BaseRunner.BaseClass;
+import Utilites.ReadConfig;
 
 public class Test002 extends BaseClass {
 	
@@ -16,6 +17,9 @@ public class Test002 extends BaseClass {
 	//smoke testing and regression testing
 	//2000 testcases in rgression---2500 testing--
 	//500 testcases in smoke
+	
+	
+	ReadConfig readConfig = new ReadConfig();
 	
 	@Test(groups = "Regression")
 	private void Tc1() {
@@ -30,11 +34,11 @@ public class Test002 extends BaseClass {
 				+ "Take screenshot "
 				+ "use assert and validate current url");
 		
-		driver.navigate().to("https://adactinhotelapp.com/");
+		driver.navigate().to(ReadConfig.TestURL());
 		
-		driver.findElement(By.id("username")).sendKeys("Dorababu5424");
+		driver.findElement(By.id("username")).sendKeys(readConfig.UserName());
 		
-		driver.findElement(By.id("password")).sendKeys("SilenceHeart");
+		driver.findElement(By.id("password")).sendKeys(readConfig.PassWord());
 		
 		driver.findElement(By.id("login")).click();
 		
