@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-27T05:51:29Z" name="Suite" finished-at="2022-05-27T05:51:39Z" duration-ms="10030">
+  <suite started-at="2022-06-01T10:23:53Z" name="Suite" finished-at="2022-06-01T10:24:15Z" duration-ms="22134">
     <groups>
     </groups>
-    <test started-at="2022-05-27T05:51:29Z" name="Test" finished-at="2022-05-27T05:51:39Z" duration-ms="10030">
-      <class name="TestRunner.Test003">
-        <test-method is-config="true" signature="SuiteStarted()[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:29Z" name="SuiteStarted" finished-at="2022-05-27T11:21:29Z" duration-ms="27" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SuiteStarted -->
-        <test-method is-config="true" signature="LunchBrowser(java.lang.String)[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:29Z" name="LunchBrowser" finished-at="2022-05-27T11:21:33Z" duration-ms="3782" status="PASS">
+    <test started-at="2022-06-01T10:23:53Z" name="Test" finished-at="2022-06-01T10:24:15Z" duration-ms="22134">
+      <class name="TestRunner.Test0011">
+        <test-method is-config="true" signature="SuiteStarted()[pri:0, instance:TestRunner.Test0011@5824a83d]" started-at="2022-06-01T10:23:53Z" name="SuiteStarted" finished-at="2022-06-01T10:23:53Z" duration-ms="25" status="PASS">
+        </test-method>
+        <test-method is-config="true" signature="LunchBrowser(java.lang.String)[pri:0, instance:TestRunner.Test0011@5824a83d]" started-at="2022-06-01T10:23:54Z" name="LunchBrowser" finished-at="2022-06-01T10:23:57Z" duration-ms="3740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -19,26 +17,14 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LunchBrowser -->
-        <test-method is-config="true" signature="TestCaseStartedTime()[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:33Z" name="TestCaseStartedTime" finished-at="2022-05-27T11:21:37Z" duration-ms="3592" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCaseStartedTime -->
-        <test-method signature="TC1()[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:37Z" name="TC1" finished-at="2022-05-27T11:21:39Z" duration-ms="2627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method is-config="true" signature="TestCaseEndedTime()[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:39Z" name="TestCaseEndedTime" finished-at="2022-05-27T11:21:39Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCaseEndedTime -->
-        <test-method is-config="true" signature="SuitedFinished()[pri:0, instance:TestRunner.Test003@449a4f23]" started-at="2022-05-27T11:21:39Z" name="SuitedFinished" finished-at="2022-05-27T11:21:40Z" duration-ms="778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SuitedFinished -->
-      </class> <!-- TestRunner.Test003 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method>
+        <test-method signature="ValidateUrl()[pri:1, instance:TestRunner.Test0011@5824a83d]" started-at="2022-06-01T10:23:57Z" name="ValidateUrl" finished-at="2022-06-01T10:24:15Z" duration-ms="17481" status="PASS">
+        </test-method>
+        <test-method signature="SearchBikeProductAndvalidateUrl()[pri:2, instance:TestRunner.Test0011@5824a83d]" started-at="2022-06-01T10:24:15Z" name="SearchBikeProductAndvalidateUrl" finished-at="2022-06-01T10:24:15Z" duration-ms="403" status="PASS">
+        </test-method>
+        <test-method is-config="true" signature="SuitedFinished()[pri:0, instance:TestRunner.Test0011@5824a83d]" started-at="2022-06-01T10:24:17Z" name="SuitedFinished" finished-at="2022-06-01T10:24:18Z" duration-ms="1173" status="PASS">
+        </test-method>
+      </class>
+    </test>
+  </suite>
 </testng-results>

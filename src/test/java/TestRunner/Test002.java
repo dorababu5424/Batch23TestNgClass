@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import BaseRunner.BaseClass;
 import Utilites.ReadConfig;
+import Utilites.ReadXl;
 
 public class Test002 extends BaseClass {
 	
@@ -20,6 +21,8 @@ public class Test002 extends BaseClass {
 	
 	
 	ReadConfig readConfig = new ReadConfig();
+	ReadXl readXl =new ReadXl();
+	
 	
 	@Test(groups = "Regression")
 	private void Tc1() {
@@ -63,6 +66,8 @@ public class Test002 extends BaseClass {
 				+ "click on search"
 				+ "take screenshot "
 				+ "user assert and validate url ");
+		
+		
 		
 	}
 

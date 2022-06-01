@@ -21,6 +21,8 @@ public class AmazonHome extends BaseClass {
 	@FindBy(xpath = "//input[@id='twotabsearchtextbox']")
 	private WebElement SearchBox;
 	
+	
+	
 	@FindBy(xpath = "//input[@id='nav-search-submit-button']")
 	private WebElement SearchClick;
 

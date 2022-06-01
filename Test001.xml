@@ -3,6 +3,11 @@
 <suite name="Suite">
 
 
+	
+    <listeners>
+        <listener class-name="Utilites.Reporting"/>
+    </listeners>
+
   <test thread-count="5" name="Test1 Chrome">
   <parameter name="browserType" value="chrome"></parameter>
     <classes>
@@ -11,20 +16,7 @@
   </test> <!-- Test -->
   
   
-   <test thread-count="5" name="Test2 FireFox">
-   <parameter name="browserType" value="firefox"></parameter>
-    <classes>
-      <class name="TestRunner.Test001"/>
-    </classes>
-  </test> <!-- Test -->
-  
-     <test thread-count="5" name="Test2 IE browser">
-   <parameter name="browserType" value="iebrowser"></parameter>
-    <classes>
-      <class name="TestRunner.Test001"/>
-    </classes>
-  </test> <!-- Test -->
-  
+
   
   
 </suite> <!-- Suite -->

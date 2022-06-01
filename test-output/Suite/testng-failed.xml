@@ -2,17 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]">
   <parameter name="browserType" value="chrome"/>
-  <test parallel="none" name="Test(failed)">
+  <listeners>
+    <listener class-name="Utilites.Reporting"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)" preserve-order="false">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="TestRunner.Test003">
+      <class name="TestRunner.Test0011">
         <methods>
           <include name="LunchBrowser"/>
           <include name="SuiteStarted"/>
+          <include name="SearchBikeProductAndvalidateUrl"/>
           <include name="SuitedFinished"/>
-          <include name="TC1"/>
+          <include name="ValidateUrl"/>
         </methods>
-      </class> <!-- TestRunner.Test003 -->
+      </class>
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test>
+</suite>

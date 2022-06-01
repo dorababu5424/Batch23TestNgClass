@@ -30,7 +30,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void SuiteStarted() {
 		
-		System.out.println("AMAZON APPLICATION TESTCASE SUITE STARTED ");
+//		System.out.println("AMAZON APPLICATION TESTCASE SUITE STARTED ");
 		Date date = new Date();
 		System.out.println( date.getTime());
 		
@@ -38,7 +38,7 @@ public class BaseClass {
 	
 	@AfterSuite
 	public void SuitedFinished() {
-		System.out.println("AMAZON APPLICATION TESTCASE SUITE ENDED ");
+//		System.out.println("AMAZON APPLICATION TESTCASE SUITE ENDED ");
 		Date date = new Date();
 		System.out.println( date.getTime());
 		driver.quit();
@@ -74,7 +74,7 @@ public class BaseClass {
 		
 	//	WebDriverManager.chromedriver().setup();
 		
-		System.setProperty("webdriver.chrome.driver", FilePath);
+		System.setProperty("webdriver.chrome.driver", FilePath.ChromePath);
 		
 		
 		driver = new ChromeDriver();

@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import BaseRunner.BaseClass;
 
@@ -38,15 +40,19 @@ import BaseRunner.BaseClass;
 public class Test001 extends BaseClass {
 	
 	
-	
+
+	static Logger log = Logger.getLogger(Test001.class);
 
 	
 	@BeforeMethod
 	private void TestCaseStartedTime() {
 		// TODO Auto-generated method stub
-
+		PropertyConfigurator.configure("C:\\Users\\SVC\\eclipse-workspace\\Batch23Testng\\src\\test\\resources\\Log4j\\Log4j2.properties");
+		
 		System.out.println("NAVIGATE TO AMAZON HOME PAGE I.E + https://www.amazon.in/ ");
 		driver.navigate().to("https://www.amazon.in/");
+		
+		log.info("Amazon Application was be lunched");
 	}
 	
 	@AfterMethod
@@ -68,11 +74,6 @@ public class Test001 extends BaseClass {
 	private void Tc1() {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Search for HP LAPTOP IN SEARCH BOX "
-				+ "2) CLICK ON SECOND PRODUT "
-				+ "3) ADD TO CART"
-				+ "4) PRINT SUCCESSFFUL MESSAGE"
-				+ "5) VALIDATE SUCCESSFULL MESSAGE");
 		
 		
 		
